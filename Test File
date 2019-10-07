@@ -1,0 +1,24 @@
+print("Hello class!")
+print("Let's learn about looping!")
+print("FOR loops vs. WHILE loops")
+print("Life is about self-delusion!")
+
+# for i in range(10, 0, -1):
+#     print("T minus", i)
+# print("Blastoff!")
+
+# for i in range(5):
+#     for j in range(5):
+#         print(i)
+#         print(j)
+
+# total = 0
+# for i in range(5):
+#     num = int(input("Please give me a number!"))
+#     total += num  # total = total + num
+# print("Your total comes to:", total)
+
+total = 0
+for i in range(101):
+    total += i
+print("Your total comes to:", total)
