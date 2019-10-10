@@ -18,7 +18,23 @@ print("Life is about self-delusion!")
 #     total += num  # total = total + num
 # print("Your total comes to:", total)
 
-total = 0
-for i in range(101):
-    total += i
-print("Your total comes to:", total)
+# total = 0
+# for i in range(101):
+#     total += i
+# print("Your total comes to:", total)
+#
+# i = 0
+# while i < 10:
+#     print("Hermon is better than Parrot!")
+#     i += 1
+
+total =0
+done = False
+while not done:
+    num = input("Give me a number to add or press Q to quit.")
+    if num.lower() == "q":
+        done = True
+    else:
+        num =int(num)
+    total += num
+print("Your total is,", total)
