@@ -36,7 +36,7 @@ while x >-1:
 print("Blastoff!")
 '''
 
-
+#4.Write a program that prints a random integer from 1 to 10(inclusive).
 
 '''
 i = random.randrange(1,11)
@@ -53,10 +53,23 @@ print(i)
      if statements.
 '''
 
+print()
 total = 0
+pos = 0
+neg = 0
+zero = 0
 for i in range(7):
     num = int(input("Enter a number: "))
     total += num
+    if num >= 1:
+        pos += 1
+    elif num <= -1:
+        neg += 1
+    else:
+        zero += 1
+print()
 print("The total is:", total)
-
-#Get questions from git
+print()
+print("Positive entries:", pos)
+print("Negative entries:", neg)
+print("Entries equal to zero:", zero)
