@@ -20,7 +20,9 @@ print("Welcome to Peggy's Roshambo Program!")
 while not done:
     comp_c = random.randrange(1, 4)
     user_c = input("1 for Rock \n 2 for Paper \n 3 for Scissors \n 4 to Quit")
-    if user_c == comp
+    if user_c == comp_c:
+        print("Tied!")
+
 
 
 #     if user_c == comp_c:
