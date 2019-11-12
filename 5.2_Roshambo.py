@@ -18,25 +18,37 @@ done = False
 
 print("Welcome to Peggy's Roshambo Program!")
 while not done:
-    comp_c = random.randrange(1, 4)
-    user_c = input("1 for Rock \n 2 for Paper \n 3 for Scissors \n 4 to Quit")
-    if user_c == comp_c:
+    computer = random.randrange(1, 4)
+    player = input("1 for Rock \n 2 for Paper \n 3 for Scissors \n 4 to Quit")
+    if player == computer:
         print("Tied!")
+    elif player == 1:
+        if computer == 2:
+            print("You lose! Paper covers rock.")
+            loss += 1
+        else:
+            print("You win! Rock beats scissors.")
+            win += 1
+    elif player == 2:
+        if computer == 1:
+            print("You win! Paper covers rock.")
+            win += 1
+        else:
+            print("You lose! Scissors cut paper.")
+            loss += 1
+    elif player == 3:
+        if computer == 1:
+            print("You lose! Rock beats scissors.")
+            loss += 1
+        else:
+            print("You win! Scissors cut paper.")
+            win += 1
+    elif player == 4:
+        done = True
+    else:
+        print("Invalid choice, please try again. \n Remember to type the numbers.")
 
-
-
-#     if user_c == comp_c:
-#         print("Tied")
-#     elif user_c !=
-#     else:
-#         print("Invalid choice. Please try again.")
-#         continue
-#
-#     if
-#
-# print()
-
-
+print("Your final win/loss ratio is:", win, "/", loss)
 
 
 
