@@ -19,7 +19,7 @@ done = False
 print("Welcome to Peggy's Roshambo Program!")
 while not done:
     computer = random.randrange(1, 4)
-    player = input("1 for Rock \n 2 for Paper \n 3 for Scissors \n 4 to Quit")
+    player = int(input("\n 1 for Rock \n 2 for Paper \n 3 for Scissors \n 4 to Quit"))
     if player == computer:
         print("Tied!")
     elif player == 1:
