@@ -4,7 +4,7 @@ import random
 
 #1. Make the following program work.
 
-'''
+
 print()
 print("This program takes three numbers and returns the sum.")
 
@@ -13,14 +13,14 @@ for i in range(3):
     num = int(input("Enter a number: "))
     total += num
 print("The total is:", total)
-'''
+
 
 #2. Write a Python program that will use a FOR loop to print the even numbers from 2 to 100, inclusive.
 
-'''
+
 for i in range(2,101,2):
     print(i)
-'''
+
 
 
 
@@ -28,20 +28,19 @@ for i in range(2,101,2):
      #10 down to, and including, 0. Then print the words Blast off! Remember, use
      #a WHILE loop, don't use a FOR loop.
 
-'''
+
 x = 10
 while x >-1:
     print(" T minus", x)
     x -=1
 print("Blastoff!")
-'''
+
 
 #4.Write a program that prints a random integer from 1 to 10(inclusive).
 
-'''
 i = random.randrange(1,11)
 print(i)
-'''
+
 
 '''
   5. Write a Python program that will:
